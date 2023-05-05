@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 1024px;
+  background-image: url(../img/top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top {
+  width: 600px;
+  padding-top: 217px;
+}
+.top_greetings {
+  font-family: "montserrat";
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.text_info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.text__breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.text_breadcrumbs {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.text_breadcrumbs:hover {
+  text-decoration-line: underline;
+}
+
+.for {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-color: #000915;
+}
+.for_item {
+  height: 300px;
+  grid-column: span 4;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  border-radius: 19px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 32px;
+}
+.for_item1 {
+  background-image: url(../img/game1.jpg);
+}
+.for_item2 {
+  background-image: url(../img/game2.jpg);
+}
+.for_item3 {
+  background-image: url(../img/game3.jpg);
+}
+
+.play {
+  background: #9C0332;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 234px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.play_go {
+  background: #9C0332;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 234px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 44px;
+}
+.play_seasons {
+  background: #000915;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 282px;
+  padding-top: 282px;
+}
+.play_word {
+  background: #000915;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-bottom: 282px;
+}
+.play_name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+.play_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  width: 500px;
+  height: 64px;
+  padding-bottom: 32px;
+}
+.play_menu{
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.play_img {
+  width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: 343px;
+    text-align: center;
+    padding-top: 238px;
+  }
+  .top_greetings {
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 32px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text_breadcrumbs {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .for {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .for_item {
+    grid-column: 1/-1;
+    height: 300px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .play_name {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .play_title {
+    width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .play__menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .play_season {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,18 +1,10 @@
-let spending = Number(prompt('сколько вы хотите потратить?'))
-let bankAccount = 1000
-let balance = bankAccount - spending
-
-if (balance > 0) {
-    alert('трата совершена на счету осталось ' + balance  + ' рублей ')
-} else{
-    alert('на счету недостаточно средств')
-}
-
 // Задание 1
 let password = '12345'
 prompt('введите пароль')
+const userPassword = prompt('Введите пароль')
 
-if (password === '12345') {
+
+if (password === userPassword) {
     alert('пароль введен верно')
 } else {
     alert('пароль введен неправильно')
@@ -92,3 +84,46 @@ switch (monthNumber) {
     default: alert('Ошибочка вышла!')
         break;
     }
+
+    let monthNumber = 12
+prompt('введите число')
+switch (monthNumber) {
+    case 13:
+        alert('ошибочка вышла, не правильно')
+        break;
+    case 12:   
+        alert('зима')
+        break; 
+    case 1:
+        alert('зима')
+        break;
+    case 2:
+        alert('зима')
+        break;
+    case 3:
+        alert('весна')
+        break;
+    case 4:
+        alert('весна')
+        break;
+    case 5:
+        alert('весна')
+        break;
+    case 6:
+        alert('лето')
+        break;
+    case 7:
+        alert('лето')
+        break;
+    case 8:
+        alert('лето')
+        break;
+    case 9:
+    case 10:
+    case 11:                                   
+        alert ('осень')
+        break;  
+    default:
+        
+        
+}
