@@ -16,11 +16,14 @@
     .text{
         font-size: 14px;
         line-height: 22px;
-    &_breadcrumbs{
-        font-size: 14px;
-        line-height: 22px;
+        &__clicker{
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-    &_info{
+        &_info{
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -36,28 +39,39 @@
             line-height: 32px;
         }
     }
-    .play_name{
-        font-size: 32px;
-        line-height: 39px;
-    }
-    .play_title{
-            width: 343px;
+
+    .play{
+        margin-bottom: 64px;
+        &_seasons{
+            padding-top: 51px;
+            padding-bottom: 85px;
+        }
+        &_name{
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &_title{
+            width: 250px;
             font-size: 14px;
             line-height: 22px;
             display: flex;
             align-items: center;
             flex-direction: column;
             flex-wrap: wrap;
-    }
-    .play_season{
+        }
+        &_act{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &_word{
             display: flex;
             flex-direction: column;
             align-items: center;
-    }
-    .play_word{
+            padding-bottom: 85px;
+        }
+        &_menu{
             display: flex;
-            flex-direction: column;
             align-items: center;
+        }
     }
-    
 }

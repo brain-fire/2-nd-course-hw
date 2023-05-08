@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000915;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -25,8 +30,7 @@ a {
   padding-top: 217px;
 }
 .top_greetings {
-  font-family: "montserrat";
-  font-style: Bold;
+  font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
@@ -34,19 +38,18 @@ a {
 }
 
 .text {
-  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
   line-height: 32px;
-  color: #ffffff;
+  color: #fff;
 }
 .text_info {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.text__breadcrumbs {
+.text__clicker {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -54,7 +57,6 @@ a {
   flex-wrap: nowrap;
 }
 .text_breadcrumbs {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -65,6 +67,11 @@ a {
 }
 .text_breadcrumbs:hover {
   text-decoration-line: underline;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
 }
 
 .for {
@@ -123,12 +130,12 @@ a {
 }
 .play_seasons {
   background: #000915;
+}
+.play_act{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 282px;
-  padding-top: 282px;
 }
 .play_word {
   background: #000915;
@@ -140,7 +147,6 @@ a {
   padding-bottom: 282px;
 }
 .play_name {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -149,18 +155,15 @@ a {
   padding-bottom: 32px;
 }
 .play_title {
-  font-family: "Montserrat";
+  width: 584px;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
-  width: 500px;
-  height: 64px;
   padding-bottom: 32px;
 }
-.play_menu{
-  width: 584px;
+.play_menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -188,9 +191,12 @@ a {
     font-size: 14px;
     line-height: 22px;
   }
-  .text_breadcrumbs {
+  .text__clicker {
     font-size: 14px;
     line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .text_info {
     display: flex;
@@ -207,12 +213,19 @@ a {
     font-size: 24px;
     line-height: 32px;
   }
+  .play{
+    margin-bottom: 64px;
+  }
+  .play_seasons{
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
   .play_name {
     font-size: 32px;
     line-height: 39px;
   }
   .play_title {
-    width: 343px;
+    width: 250px;
     font-size: 14px;
     line-height: 22px;
     display: flex;
@@ -220,15 +233,18 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .play__menu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .play_season {
+  .play_word {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 85px;
   }
-}
+  .play_menu {
+    display: flex;
+    align-items: center;
+  }
+  .play_act{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  }

@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000915;
+}
 
 .center{
     padding-left: calc(50% - 600px);
@@ -24,8 +28,7 @@ a{
     width: 600px;
     padding-top: 217px;
     &_greetings{
-        font-family: 'montserrat';
-        font-style: Bold;
+        font-style: normal;
         font-weight: 700;
         font-size: 64px;
         line-height: 78px;
@@ -34,19 +37,18 @@ a{
 }
 
 .text{
-    font-family: "Montserrat";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 18px;
     line-height: 32px;
-    color: #ffffff;
+    color: #fff;
     &_info{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
     }
     
-    &__breadcrumbs{
+    &__clicker{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -54,7 +56,6 @@ a{
         flex-wrap: nowrap;
     }
     &_breadcrumbs{
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -66,6 +67,10 @@ a{
         text-decoration-line: underline;
         }
     }
+}
+.breadcrumbs{
+    display: flex;
+    align-items: center;
 }
 
 .for{
@@ -123,11 +128,12 @@ a{
     }
     &_seasons{
         background: #000915;
+    }
+    &_act{
         display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 282px;
-        padding-top: 282px;
+        flex-direction: row-reverse;
         justify-content: space-between;
+}
     }
     &_word{
         background: #000915;
@@ -139,7 +145,6 @@ a{
         padding-bottom: 282px;
     }
     &_name{
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -148,18 +153,15 @@ a{
         padding-bottom: 32px;
     }
     &_title{
-        font-family: 'Montserrat';
+        width: 584px;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 32px;
         color: #ffffff;
-        width: 500px;
-        height: 64px;
         padding-bottom: 32px; 
     }
     &_menu{
-        width: 584px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -167,5 +169,4 @@ a{
     &_img{
         width: 100%;
     }
-}
 
