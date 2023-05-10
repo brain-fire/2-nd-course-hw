@@ -30,19 +30,17 @@ for (let key in obj){
 }
 
 // Задание 5
-for (let n = 0; n <= 50; n++) {
-    if(1000 % 2  == 0 ){
-        console.log(n)
-        let num = 50
-    }
-  }
+let n = 1000;
+for(; n>=50; n++){
+    n = n/2
+    console.log(n)
+}
 
 
 // Задание 6
 for (let dayNumber = 5; dayNumber <= 31; dayNumber++) { 
-      if (dayNumber % 7 == 0) {
-          console.log("сегодня пятница ...-e число, необходимо подготовить отчет!"); 
-          continue; 
-      }
-      console.log("план работ на сегодняшний день:..."); 
-  }
+    if (dayNumber % 7 == 0) {
+        console.log(`сегодня пятница ${dayNumber}-e число, необходимо подготовить отчет!`); 
+        continue; 
+    }
+}
