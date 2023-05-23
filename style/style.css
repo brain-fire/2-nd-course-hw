@@ -27,9 +27,10 @@ a {
 
 .top {
   width: 600px;
-  padding-top: 217px;
 }
 .top_greetings {
+  width: 700px;
+  margin-top: 217px;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -129,6 +130,8 @@ a {
   margin-top: 44px;
 }
 .play_seasons {
+  padding-top: 282px;
+  padding-bottom: 282px;
   background: #000915;
 }
 .play_act{
@@ -180,9 +183,10 @@ a {
   .top {
     width: 343px;
     text-align: center;
-    padding-top: 238px;
   }
   .top_greetings {
+    width: 343px;
+    text-align: center;
     font-size: 30px;
     line-height: 35px;
     padding-bottom: 32px;
