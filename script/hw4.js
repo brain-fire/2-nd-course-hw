@@ -1,21 +1,15 @@
  // Задача №1
-  function sum(a, b) {
-    return a < b
-}
-
-  function mult(a, b) {
-   return a === b
-}
-
- let calc = (8, 4)
- let num = (6, 6)
-
- let result = calc 
- let result2 = num
-
- console.log(`${result}`)
- console.log(`${result2}`)
-
+  function lesser(a, b) {
+   if (a < b) {
+    return(b)
+   } else if (a === b) {
+    return(b)
+   } else{
+    return(b)
+   }
+   }
+   console.log(lesser(8, 4))
+   console.log(lesser(6, 6))
 // Задача № 2
 
   function even_or_odd(number) {
@@ -66,7 +60,7 @@ test(6, 6)
 // Задание № 6
 
     let n = +prompt(`введите число`)
-    let y = (n)  =>{
+    let askNumber = (n)  =>{
         if(isNaN(n)){
             return(`${n} переданный параметр не является числом`)
         } else {
@@ -79,32 +73,36 @@ test(6, 6)
 
 
   // задание №7
+
+  function getSquareArea() {
+    return Math.PI * this.radius * this.radius
+  }
+
+  function getSquarePerimeter() {
+    return 2*Math.PI*this.radius
+  }
+
    const circle1 = {
-   'radius' : 'this.radius',
-   'getArea': 'this.area',
-   'get.Perimeter': 'this.perimeter'
-        } 
+   radius: 5,
+
+   Area: getSquareArea,
+   Perimeter: getSquarePerimeter
+   } 
 
     const circle2 = {
-        'radius' : 'this.radius',
-        'getArea': 'this.area',
-        'get.Perimeter': 'this.perimeter'
-         } 
-         console.log(circle1)
+    radius: 8,
 
-   function circle(radius) {
-    this.radius = radius;
-  // area method
-    this.area = function () 
-    {
-        return Math.PI * this.radius * this.radius;
-    };
-  // perimeter method
-    this.perimeter = function ()
-    {
-        return 2*Math.PI*this.radius;
-    };
-}
-let c = new circle(3);
-console.log('Area =', c.area().toFixed(2));
-console.log('perimeter =', c.perimeter().toFixed(2));
+    Area: getSquareArea,
+    Perimeter: getSquarePerimeter
+      
+    } 
+
+    console.log(circle1.Area())
+    console.log(circle1.Perimeter())
+    console.log(circle2.Area())
+    console.log(circle2.Perimeter())
+
+     
+
+         
+
