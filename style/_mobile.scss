@@ -1,0 +1,77 @@
+@media (min-width: 300px) and (max-width: 767px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+        width: 343px;
+        text-align: center;
+        padding-top: 238px;
+        &_greetings{
+            font-size: 30px;
+            line-height: 35px;
+            padding-bottom: 32px;
+        }
+    }
+    .text{
+        font-size: 14px;
+        line-height: 22px;
+        &__clicker{
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+    }
+    .for{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        &_item{
+            grid-column: 1 / -1;
+            height: 300px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .play{
+        margin-bottom: 64px;
+        &_seasons{
+            padding-top: 51px;
+            padding-bottom: 85px;
+        }
+        &_name{
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &_title{
+            width: 250px;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &_act{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &_word{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 85px;
+        }
+        &_menu{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
