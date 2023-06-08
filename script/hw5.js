@@ -37,7 +37,7 @@ if (numberPosition.indexOf(4) !== -1) {
    for (let i = 0; i < run; i++){
      arr[i] = [1, 1, 1];
     }
-    console.log(arr);
+    console.log(arry);
 
 
 // задача № 5 
@@ -80,11 +80,12 @@ if (numberPosition.indexOf(4) !== -1) {
 // Задача № 10
 
 const sum = [1, 5, 4, 10, 0, 3];
-for (let i = 0; i < sum.length; i++) {
-  console.log(sum[i])
-  if (sum[i] =+1);
-  console.log(numbs[i]);
+console.log(sum)
+for (let i = 0; i < sum.length; i++){
+    sum[i] +=1;
 }
+console.log(sum)
+
 
 
  //Задача № 11
@@ -114,7 +115,6 @@ console.log(filterPositive(arr1, arr2))
 
 //filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 //filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
-
 
 
 
