@@ -73,42 +73,50 @@
 //Если не угадал ни одного элемента, сообщить, что пользователь ответил неверно.
 
 
-const word = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-let playWord = word.sort(function() {
-    return Math.random() - 0.5;
-})
+function playWord() {
+    const word = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let mixWord = word.sort(()=> Math.random() - 0.5);
 
-   alert(`Запомни порядок слов ${playWord.join(', ')}`)
-let userReply = prompt('Чему равняется первый элемент массива?')
+    let userName = prompt(`Привет! Как Тебя зовут?`);
+    
+    let numberOfErr = 0;// счет ошибок
 
- if(playWord.splice(0, 1)[0].toLowerCase() === userReply.toLowerCase()){
-     alert (`молодец! угадал`)
-  }else{
-     alert(`не угадал, Попробуй еще раз`)
+
+    alert(`${userName} Я сейчас покажу тебе слова, постарайся их запомнить чтобы ответить на вопрос`)
+    alert(`${mixWord.join(' ')}`);
+
+    let userReply2 = prompt('Чему равняется последний элемент массива?');
+
+            if(mixWord.splice(-1)[0].toLowerCase() === userReply2.toLowerCase()) {
+            аlert(`Молодец!`) 
+            } else{
+            alert(`Упсс!!!`);
+                numberOfErr = numberOfErr +1;
+            }
+
+    alert(`${userName} Попробуй еще раз запомнить слова, которые я тебе покажу`)
+    alert(`${mixWord.join(' ')}`)
+    let userReply = prompt('Чему равняется первый элемент массива?')
+    
+
+        if (mixWord.splice(0, 1)[0].toLowerCase() === userReply.toLowerCase()) {
+            alert(`Молодец`)
+        } else {
+            alert(`Упсс!!!`)
+            numberOfErr = numberOfErr +1;
+        }
+
+        if(numberOfErr === 0){
+            alert(`Поздравляю! ${userName} ты отлично справился с заданием` )
+        }else{
+            alert(`${userName} ты был близок к победе, но ${numberOfErr} раз(а) ответил не верно`)
+        }
 }
 
-alert(`Запомни порядок слов:  ${playWord.join(', ')}`)
+playWord()
 
-let userReply2 = prompt('Чему равняется последний элемент массива?')
 
-if (playWord.splice(-1)[0].toLowerCase() === userReply2.toLowerCase()) {
-   alert('молодец! угадал')
-} else{
-    alert('не угадал')
-}
-
-alert(`Запомни порядок слов ${playWord.join(' ')}`)
-
-let userReply3 = prompt('Чему равняется первый и последний элемент массива?')
-
-if (userReply3.toLowerCase() !== playWord.splice(-1)[0].toLowerCase() && userReply3.toLowerCase() !== playWord.splice(0, 1)[0].toLowerCase()) {
-    alert(`молодец! ты угадал!`);
-} else if(userReply3.toLowerCase() < playWord.splice(0, 1)[0].toLowerCase() || userReply3.toLowerCase() > playWord.splice(-1)[0].toLowerCase()) {
-    alert(`Вы были близки к победе`);
-} else {
-    alert(`Не угадали, попробуйте еще раз`);
-}
 
 
 
