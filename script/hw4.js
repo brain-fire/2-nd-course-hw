@@ -1,11 +1,11 @@
  // Задача №1
   function lesser(a, b) {
    if (a < b) {
-    return(b)
-   } else if (a === b) {
-    return(b)
+    return b;
+   } else if (a === b){
+    return a;
    } else{
-    return(b)
+    return b
    }
    }
    console.log(lesser(8, 4))
