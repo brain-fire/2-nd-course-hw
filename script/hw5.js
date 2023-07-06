@@ -15,11 +15,11 @@ const numberPosition = [1, 5, 4, 10, 0, 3];
 
 console.log(numberPosition.indexOf(4))
 
-if (numberPosition.indexOf(4) !== -1) {
-    console.log('yes');
-} else {
-    console.log('no')
-}
+//if (numberPosition.indexOf(4) !== -1) {
+//    console.log('yes');
+//} else {
+//    console.log('no')
+//}
 
 
 // задача №3 
@@ -71,11 +71,12 @@ if (numberPosition.indexOf(4) !== -1) {
  console.log(strReverse)
 
 // задача №9 
- const oneLine = [[1, 2, 3,],[4, 5, 6]]
+ const oneLine = [[1, 2, 3,],[4, 5, 6]] //const res = oneLine.reduce((acc, item) => acc.concat(item), []);
 
- const res = oneLine.reduce((acc, item) => acc.concat(item), []);
+ const flatArr = oneLine.flat(Infinity) // 
+ 
+ console.log(flatArr)
 
- console.log(res)
 
 // Задача № 10
 
