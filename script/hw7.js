@@ -20,7 +20,7 @@ const people =  [
 
  myFn(myFnCallback)
  
-//Задача 2
+ //Задача 2
 
  //Реализуйте функцию filter, которая должна работать аналогично методу 
  //массива `filter. За основу возьмите функцию map, которую мы реализовывали на уроке.
@@ -40,20 +40,14 @@ const people =  [
  
 
 function isPositive(el) {
-   if (el >= 0) {
-    return true
-   } else {
-    return false
-   }
-}
+
+      return el >=0;
+ }
+
 
 
 function isMale(user) {
-   if (user.gender === 'male') {
-    return true
-   } else {
-    return false
-   }
+   return user.gender === 'male';
     
 }
 
@@ -127,18 +121,22 @@ console.log(filter(people2, isMale))
  
    function delayForSecond(cb) {
     setTimeout(() => {
-        console.log('Прошла одна секунда');
+        console.log(`Прошла одна секунда`);
 				if(cb) { 	cb(); }
 
     }, 1000)
 }
 
 
-function sayHi (name) {
+function sayHi(name) {
     console.log(`Привет, ${name}`);
-}
+};
 
 // Код выше менять нельзя
 
 // Нужно изменить код ниже:
-sayHi(["Глеб"], delayForSecond)
+//delayForSecond(sayHi, "Глеб") // Прошла одна секунда. Привет indefinite
+
+delayForSecond(sayHi => {
+   console.log('Привет Глеб')
+})
