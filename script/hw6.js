@@ -107,5 +107,6 @@ console.log(searchStart2)// []
    const minute = myDate.getMinutes().toString().padStart(2, "0") 
 
    return `${dayTitle[day]}, ${date} ${monthTitle[month]} ${year}, ${hour}:${minute}`
+   
   }
    console.log(formatDate(myDate));
